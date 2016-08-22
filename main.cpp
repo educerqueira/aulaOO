@@ -1,21 +1,22 @@
 #include <iostream>
-#include "pessoa.hpp"
+#include "PessoaFisica.hpp"
+#include "PessoaJuridica.hpp"
 
 using namespace std;
 
 //main file
 int main(){
 
-   Pessoa umaPessoa;
-   Pessoa outraPessoa;
+   PessoaFisica umaPessoa;
+   PessoaJuridica umaEmpresa;
 
    cout << "Nome: " << umaPessoa.getNome() << endl;
    cout << "idade: " << umaPessoa.getIdade() << endl;
    cout << "Telefone: " << umaPessoa.getTelefone() << endl;
 
-  outraPessoa.setNome("Paulo");
-  outraPessoa.setIdade("32");
-  outraPessoa.setTelefone("555-555");
+  outraPessoa.setNome("Eduardo");
+  outraPessoa.setIdade("20");
+  outraPessoa.setTelefone("99612-2513");
 
   cout << "Nome: " << outraPessoa.setNome() << endl;
   cout << "Idade: " << outraPessoa.setIdade() << endl;
